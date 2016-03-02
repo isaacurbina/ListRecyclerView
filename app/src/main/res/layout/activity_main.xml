@@ -10,6 +10,13 @@
     android:orientation="vertical"
     tools:context="com.mobileappsco.training.day6.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCards"
+        android:id="@+id/btnCards"
+        android:onClick="gotoCardsActivity"/>
+
     <ListView
         android:id="@+id/listView1"
         android:layout_height="match_parent"
