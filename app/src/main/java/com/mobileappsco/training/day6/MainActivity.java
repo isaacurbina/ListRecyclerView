@@ -34,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
             Log.e("MYAPP", "Error reading string arrays >> "+e.getMessage());
         }
 
-        Intent i = new Intent(this, CardsActivity.class);
-        startActivity(i);
-
     }
 
     public void gotoCardsActivity(View view) {

@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -48,7 +47,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder>{
                 .load(persons.get(i).photo)
                 .placeholder(android.R.drawable.ic_menu_gallery)
                 .into(holder.personPhoto);
-        Toast.makeText(context, persons.get(i).photo, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context, persons.get(i).photo, Toast.LENGTH_SHORT).show();
         //holder.personPhoto.setImageResource(persons.get(i).photo);
     }
 

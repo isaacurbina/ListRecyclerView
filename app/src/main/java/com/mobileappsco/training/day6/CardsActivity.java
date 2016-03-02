@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,9 @@ public class CardsActivity extends AppCompatActivity {
                 .placeholder(android.R.drawable.gallery_thumb)
                 .into(person_photo);*/
 
+        if (Person.count(Person.class)<1) {
+            populateDB();
+        }
         //RecyclerView
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
         rv.setHasFixedSize(true);
@@ -51,19 +55,34 @@ public class CardsActivity extends AppCompatActivity {
 
     // This method creates an ArrayList that has three Person objects
     private void initializeData(){
-        persons = new ArrayList<>();
-        persons.add(new Person("Emma Wilson",
+        //persons = new ArrayList<>();
+        persons = Person.listAll(Person.class);
+        /*Log.d("MYAPP", "number records "+Person.count(Person.class));
+        for (Person p : persons2) {
+            Log.d("MYAPP",
+                    "Name: "+p.name+
+                    "\nAge: "+p.age);
+        }*/
+    }
+
+    private void populateDB() {
+        Log.d("MYAPP", "populateDB()");
+        Person p1 = new Person("Emma Wilson",
                 "23 years old",
-                "http://images-cdn.moviepilot.com/image/upload/v1426602397/bb1f41c779b62689a8bc5dc7824db057_large-it-felt-like-incest-emma-watson-expresses-her-views-on-kissing-rupert-grint-jpeg-236998.jpg"));
-        persons.add(new Person("Lavery Maiss",
+                "http://images-cdn.moviepilot.com/image/upload/v1426602397/bb1f41c779b62689a8bc5dc7824db057_large-it-felt-like-incest-emma-watson-expresses-her-views-on-kissing-rupert-grint-jpeg-236998.jpg");
+        p1.save();
+        Person p2 = new Person("Lavery Maiss",
                 "25 years old",
-                "https://upload.wikimedia.org/wikipedia/commons/d/d5/Lavery_Maiss_Auras.jpg"));
-        persons.add(new Person("Lillie Watts",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d5/Lavery_Maiss_Auras.jpg");
+        p2.save();
+        Person p3 = new Person("Lillie Watts",
                 "35 years old",
-                "https://pbs.twimg.com/profile_images/484454177234354176/krKCnYiT.jpeg"));
-        persons.add(new Person("Isaac Urbina",
+                "https://pbs.twimg.com/profile_images/484454177234354176/krKCnYiT.jpeg");
+        p3.save();
+        Person p4 = new Person("Isaac Urbina",
                 "26 years old",
-                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS68XTbYy9ud2ApFvS1gXCAmC3PsxhoL0PpJ79kM89s-g8jo3ti"));
+                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS68XTbYy9ud2ApFvS1gXCAmC3PsxhoL0PpJ79kM89s-g8jo3ti");
+        p4.save();
     }
 
 }
