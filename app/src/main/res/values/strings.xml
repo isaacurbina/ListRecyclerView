@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Day6</string>
+
+    <string-array name="media_names">
+        <item>Big Buck Bunny</item>
+        <item>Elephants Dream</item>
+        <item>Sintel</item>
+        <item>Tears of Steel</item>
+        <item>Big Buck Bunny</item>
+        <item>Elephants Dream</item>
+        <item>Sintel</item>
+        <item>Tears of Steel</item>
+        <item>Big Buck Bunny</item>
+        <item>Elephants Dream</item>
+        <item>Sintel</item>
+        <item>Tears of Steel</item>
+    </string-array>
+
+    <string-array name="media_uris">
+        <item>https://static-s.aa-cdn.net/img/ios/434812407/197e9ad0aa0b9c3a5e0875e56454a76e?v=1</item>
+        <item>https://38.media.tumblr.com/avatar_ef4d5288006f_128.png</item>
+        <item>http://image.eveonline.com/Character/91614718_256.jpg</item>
+        <item>http://www.blendswap.com/files/images/2012/10/blend_58130/thesupermonkey_quadbotfront_medium_521a27e4f58b0aa271840f98b89d9ec88a2673e9.jpg</item>
+        <item>https://static-s.aa-cdn.net/img/ios/434812407/197e9ad0aa0b9c3a5e0875e56454a76e?v=1</item>
+        <item>https://38.media.tumblr.com/avatar_ef4d5288006f_128.png</item>
+        <item>http://image.eveonline.com/Character/91614718_256.jpg</item>
+        <item>http://www.blendswap.com/files/images/2012/10/blend_58130/thesupermonkey_quadbotfront_medium_521a27e4f58b0aa271840f98b89d9ec88a2673e9.jpg</item>
+        <item>https://static-s.aa-cdn.net/img/ios/434812407/197e9ad0aa0b9c3a5e0875e56454a76e?v=1</item>
+        <item>https://38.media.tumblr.com/avatar_ef4d5288006f_128.png</item>
+        <item>http://image.eveonline.com/Character/91614718_256.jpg</item>
+        <item>http://www.blendswap.com/files/images/2012/10/blend_58130/thesupermonkey_quadbotfront_medium_521a27e4f58b0aa271840f98b89d9ec88a2673e9.jpg</item>
+    </string-array>
+</resources>
